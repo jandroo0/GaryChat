@@ -1,0 +1,214 @@
+
+// sign up and sign in
+.formContainer { 
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formWrapper{
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .logo{
+            color: #5d5b8d;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #5d5b8d;
+            font-size: 14px;
+        }
+
+        // alr a member login text
+        p {
+                color: #5d5b8d;
+                font-size: 14px;
+                margin-top: 10px;
+                
+            }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 15px;
+
+            input {
+                padding: 15px;
+                border: none;
+                width: 250px;
+                border-bottom: 1px solid  #a7bcff;
+                &::placeholder {
+                    color: rgba(175, 175, 175, 0.45)
+                }
+            }
+            button{
+                background-color: #7b96ec;
+                color: white;
+                padding: 10px;
+                width: 100%;
+                font-weight: bold;
+                border: 1px solid #7b96ec;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: white;
+                    color: #7b96ec;
+                   
+                }
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+
+                gap: 10px;
+                color: #8da4f1;
+                font-size: 14px;
+                cursor: pointer;
+                img { 
+                    width: 32px;
+                }
+            }
+            
+        }
+                
+    }
+
+
+}
+
+
+// home page
+.home {
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 65%;
+        height: 85%;
+        display: flex;
+        overflow: hidden;
+
+        .sidebar { // user left sidebar
+            flex: 1; // takes 1 tile
+            background-color: #3e3c61;
+
+            .navbar { // user info navbar
+                display: flex;
+                align-items: center;
+                background-color: #2f2d52;
+                color: #ddddf7;
+                height: 50px;
+                padding: 15px 30px;
+                
+                justify-content: space-between;
+
+                .logo { // gary chat logo
+                    font-weight: bold;
+                    font-size: 26px;
+                }
+
+                .user { // user name
+                    display: flex;
+                    gap: 10px;
+                    font-size: 20px;
+                    align-items: center;
+
+                    img{ // user img
+                        background-color: #ddddf7;
+                        height: 46px;
+                        width: 46px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    button { // logout button
+                        background-color: #5d5b8d;
+                        color: #ddddf7;
+                        font-size: 16px;
+                        border: 1px solid #5d5b8d;
+                        padding: 4px;
+
+                        cursor: pointer;
+
+                        &:hover {
+                                background-color: #ddddf7;
+                                color: #5d5b8d;
+                            }
+                    }
+                }
+            }
+
+                .search { // chat search
+
+                    .searchForm{ // form
+                        padding: 10px;
+
+                        input{ // input box
+                            background-color: transparent;
+                            border: none;
+                            font-size: 16px;;
+                            color: rgb(200, 200, 200);
+                            outline: none;
+
+                            &::placeholder {
+                                color: rgba(175, 175, 175, 0.8);
+                            }
+                        }
+                    }
+                }
+
+                .userChat{ // chats 
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    color: white;
+                    font-size: 24px;
+
+                    border-bottom: 1px solid gray;
+
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #2f2d52;
+                        border-bottom: 1px solid white;
+                    }
+
+                    img{ // user chat images
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .userChatInfo{
+                        span{
+                            font-size: 18px;
+                            font-weight: 500;}
+                        p{}
+                    }
+                }
+            }
+        
+        .chat {
+            flex:2;
+        }
+    }
+}
