@@ -9,6 +9,7 @@ import { AuthContext } from './context/AuthContext';
 
 function App() {
   const { currentUser } = useContext(AuthContext);
+  console.log(currentUser);
 
   const ProtectedRoute = ({ children }) => { // protected route on home page, only allowed if logged in, otherwise send to login page.
     if (!currentUser) {

@@ -23,7 +23,7 @@ export const auth = getAuth();
 
 export const analytics = getAnalytics(app);
 
+export const db = getFirestore();
+
 // firebase storage
 export const storage = getStorage();
-
-export const db = getFirestore();
