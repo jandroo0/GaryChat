@@ -156,7 +156,8 @@
                 .user { // user name
                     display: flex;
                     gap: 10px;
-                    font-size: 20px;
+                    font-size: 22px;
+                    // font-weight: bold;
                     align-items: center;
 
                     img{ // user img
@@ -172,7 +173,7 @@
                         color: #ddddf7;
                         font-size: 16px;
                         border: 1px solid #5d5b8d;
-                        padding: 4px;
+                        padding: 4px 6px;
 
                         cursor: pointer;
 
@@ -190,18 +191,22 @@
             }
 
                 .search { // chat search
+                    border-bottom: 1px solid gray;
+                    margin-bottom: 2px;
+
                     .searchForm{ // form
                         padding: 10px;
 
                         input{ // user search input box
                             background-color: transparent;
                             border: none;
-                            font-size: 16px;;
+                            font-size: 16px;
                             color: rgb(200, 200, 200);
                             outline: none;
+                            width: 100%;
 
                             &::placeholder {
-                                color: rgba(175, 175, 175, 0.8);
+                                color: rgba(213, 213, 213, 0.8);
                             }
                         }
                     }
@@ -215,14 +220,13 @@
 
                     color: white;
                     font-size: 24px;
-                    
-                    border-bottom: 1px solid gray;
 
                     cursor: pointer;
 
                     &:hover {
                         background-color: #2f2d52;
                         border-bottom: 1px solid white;
+                        border-top: 1px solid white;
                     }
 
                     img{ // user chat images
@@ -235,7 +239,7 @@
                     .userChatInfo{
                         span{
                             font-size: 18px;
-                            font-weight: 500;
+                            font-weight: 550;
                         }
 
                         p{
@@ -368,6 +372,8 @@
                         padding: 10px 15px;
                         color: white;
                         background-color: #8da4f1;
+
+                        cursor: pointer;
 
                         &:hover {
                             background-color: white;
